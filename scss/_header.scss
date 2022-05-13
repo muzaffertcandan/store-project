@@ -1,0 +1,47 @@
+.big-container {
+  .nav {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    .nav-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .nav-item {
+        .limited-offer {
+          font-size: 20px;
+          border-bottom: 2px solid green;
+          cursor: pointer;
+        }
+        .search {
+          display: flex;
+          align-items: center;
+          background-color: grey;
+          padding: 10px 20px;
+          border-radius: 10px;
+          .search-input {
+            border: none;
+            background-color: transparent;
+            ::placeholder {
+              color: lightgreen;
+            }
+          }
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    .nav-bottom{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .menu-item{
+        margin-right: 50px;
+        cursor: pointer;
+        
+      }
+    }
+  }
+}
