@@ -1,7 +1,7 @@
 .big-container .nav {
   background-color: black;
   color: white;
-  padding: 50px; }
+  padding: 20px; }
   .big-container .nav .nav-top {
     display: flex;
     align-items: center;
@@ -30,7 +30,9 @@
     justify-content: center; }
     .big-container .nav .nav-bottom .menu-item {
       margin-right: 50px;
-      cursor: pointer; }
+      cursor: pointer;
+      color: white;
+      font-weight: 400; }
 
 body {
   margin: 0;
@@ -38,5 +40,21 @@ body {
 
 .big-container {
   font-family: 'Lato', sans-serif; }
+
+.big-container .slider {
+  background: url(https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80); }
+  .big-container .slider .slider-wrapper {
+    display: flex;
+    width: 500vw; }
+    .big-container .slider .slider-wrapper .slider-item {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative; }
+      .big-container .slider .slider-wrapper .slider-item .slider-title {
+        position: absolute;
+        top: 0;
+        color: white; }
 
 /*# sourceMappingURL=style.css.map */

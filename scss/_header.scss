@@ -2,7 +2,7 @@
   .nav {
     background-color: black;
     color: white;
-    padding: 50px;
+    padding: 20px;
     .nav-top {
       display: flex;
       align-items: center;
@@ -40,7 +40,8 @@
       .menu-item{
         margin-right: 50px;
         cursor: pointer;
-        
+        color: white;
+        font-weight: 400;
       }
     }
   }
