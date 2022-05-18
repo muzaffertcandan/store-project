@@ -115,4 +115,77 @@ body {
           background-color: white;
           color: black; }
 
+.big-container .features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px; }
+  .big-container .features .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .big-container .features .feature .feature-icon {
+      width: 50px;
+      height: 50px; }
+    .big-container .features .feature .feature-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 20px; }
+    .big-container .features .feature .feature-description {
+      color: grey;
+      width: 50%;
+      height: 100px; }
+
+.big-container .product {
+  height: 100vh;
+  background-color: whitesmoke;
+  position: relative;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); }
+  .big-container .product .product-img {
+    width: 50%; }
+  .big-container .product .product-details {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px; }
+    .big-container .product .product-details .product-title {
+      font-size: 75px;
+      font-weight: 900; }
+    .big-container .product .product-details .product-description {
+      font-style: 24px;
+      color: grey; }
+    .big-container .product .product-details .colors {
+      margin-bottom: 20px;
+      display: flex; }
+      .big-container .product .product-details .colors .color {
+        width: 32px;
+        height: 32px;
+        border-radius: 5px;
+        background-color: black;
+        margin-right: 10px;
+        cursor: pointer; }
+        .big-container .product .product-details .colors .color:nth-child(2) {
+          background-color: darkblue; }
+    .big-container .product .product-details .sizes {
+      display: flex;
+      margin-bottom: 20px; }
+      .big-container .product .product-details .sizes .size {
+        padding: 5px 20px;
+        border: 1px solid black;
+        margin-right: 10px;
+        cursor: pointer;
+        font-size: 20px; }
+    .big-container .product .product-details .product-button {
+      float: right;
+      padding: 10px 20px;
+      border-color: black;
+      color: white;
+      font-weight: 600;
+      cursor: pointer; }
+      .big-container .product .product-details .product-button:hover {
+        background-color: white;
+        color: black; }
+
 /*# sourceMappingURL=style.css.map */
