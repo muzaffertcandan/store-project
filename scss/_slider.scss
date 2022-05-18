@@ -1,22 +1,104 @@
 .big-container {
   .slider {
     background: url(https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80);
-    // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
     .slider-wrapper {
       display: flex;
       width: 500vw;
+      transition: all 1.5s ease-in-out;
       .slider-item {
         width: 100vw;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
-        .slider-title{
-            position: absolute;
-            top: 0;
-            color: white;
+        &:nth-child(1) {
+          .slider-price{
+            color: #369e62;
+          }
+          .slider-bg{
+            background-color: #369e62;
+          }
         }
-    }
+        &:nth-child(2) {
+          .slider-price{
+            color: rebeccapurple;
+          }
+          .slider-bg {
+            background-color: rebeccapurple;
+          }
+        }
+        &:nth-child(3) {
+          .slider-price{
+            color: teal;
+          }
+          .slider-bg {
+            background-color: teal;
+          }
+        }
+        &:nth-child(4) {
+          .slider-price{
+            color: cornflowerblue;
+          }
+          .slider-bg {
+            background-color: cornflowerblue;
+          }
+        }
+        &:nth-child(5) {
+          .slider-price{
+            color: rgb(124,115,80);
+          }
+          .slider-bg {
+            background-color: rgb(124,115,80);
+          }
+        }
+        .slider-title {
+          position: absolute;
+          top: 10%;
+          right: 10%;
+          font-size: 60px;
+          font-weight: 900;
+          text-align: center;
+          color: white;
+          z-index: 1;
+        }
+        .slider-price {
+          position: absolute;
+          top: 10%;
+          left: 10%;
+          font-size: 60px;
+          font-weight: 300;
+          text-align: center;
+          border: 1px solid grey;
+          color: white;
+          z-index: 1;
+        }
+        .slider-bg {
+          width: 750px;
+          height: 750px;
+          border-radius: 50%;
+          position: absolute;
+        }
+        .slider-img {
+          z-index: 1;
+        }
+        .buy-button {
+          position: absolute;
+          top: 50%;
+          right: 10%;
+          font-size: 30px;
+          font-weight: 900;
+          border: 1px solid grey;
+          color: white;
+          z-index: 1;
+          cursor: pointer;
+          background-color: black;
+          &:hover {
+            background-color: white;
+            color: black;
+          }
+        }
+      }
     }
   }
 }
