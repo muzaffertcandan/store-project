@@ -14,9 +14,10 @@ const products = [
         },
         {
           code: "darkblue",
-          img: "./img/air2.png",
+          img: "/img/air2.png",
         },
       ],
+      description: "Air Force or Marine",
     },
     {
       id: 2,
@@ -25,13 +26,14 @@ const products = [
       colors: [
         {
           code: "lightgray",
-          img: "./img/jordan.png",
+          img: "/img/jordan.png",
         },
         {
           code: "green",
-          img: "./img/jordan2.png",
+          img: "/img/jordan2.png",
         },
       ],
+      description: "Who is your president Michael Jordan ",
     },
     {
       id: 3,
@@ -40,13 +42,14 @@ const products = [
       colors: [
         {
           code: "lightgray",
-          img: "./img/blazer.png",
+          img: "/img/blazer.png",
         },
         {
           code: "green",
-          img: "./img/blazer2.png",
+          img: "/img/blazer2.png",
         },
       ],
+      description: "My Blazor Razor",
     },
     {
       id: 4,
@@ -55,13 +58,14 @@ const products = [
       colors: [
         {
           code: "black",
-          img: "./img/crater.png",
+          img: "/img/crater.png",
         },
         {
           code: "lightgray",
-          img: "./img/crater2.png",
+          img: "/img/crater2.png",
         },
       ],
+      description: "Crater is the best",
     },
     {
       id: 5,
@@ -77,17 +81,19 @@ const products = [
           img: "./img/hippie2.png",
         },
       ],
+      description: "Hippie shoes XD",
     },
   ];
   
   let choosenProduct = products[0];
   
-  const currentProductImg = document.querySelector(".productImg");
-  const currentProductTitle = document.querySelector(".productTitle");
-  const currentProductPrice = document.querySelector(".productPrice");
+  const currentProductImg = document.querySelector(".product-img");
+  const currentProductTitle = document.querySelector(".product-title");
+  const currentProductPrice = document.querySelector(".product-price");
   const currentProductColors = document.querySelectorAll(".color");
   const currentProductSizes = document.querySelectorAll(".size");
-  
+  const currentProductDescription = document.querySelector(".product-description")
+
   menuItems.forEach((item, index) => {
     item.addEventListener("click", () => {
       //change the current slide
@@ -98,6 +104,7 @@ const products = [
   
       //change texts of currentProduct
       currentProductTitle.textContent = choosenProduct.title;
+      currentProductDescription.textContent = choosenProduct.description;
       currentProductPrice.textContent = "$" + choosenProduct.price;
       currentProductImg.src = choosenProduct.colors[0].img;
   
@@ -107,3 +114,22 @@ const products = [
       });
     });
   });
+
+  
+currentProductColors.forEach((color, index) => {
+  color.addEventListener("click", () => {
+    currentProductImg.src = choosenProduct.colors[index].img;
+  });
+});
+
+
+currentProductSizes.forEach((size, index) => {
+  size.addEventListener("click", () => {
+    currentProductSizes.forEach((size) => {
+      size.style.backgroundColor = "white";
+      size.style.color = "black";
+    });
+    size.style.backgroundColor = "black";
+    size.style.color = "white";
+  });
+});

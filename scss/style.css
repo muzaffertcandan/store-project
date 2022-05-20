@@ -34,6 +34,9 @@
       color: white;
       font-weight: 400; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   margin: 0;
   padding: 0; }
@@ -43,7 +46,8 @@ body {
 
 .big-container .slider {
   background: url(https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%); }
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  overflow: hidden; }
   .big-container .slider .slider-wrapper {
     display: flex;
     width: 500vw;
@@ -151,6 +155,9 @@ body {
     width: 40%;
     padding: 50px; }
     .big-container .product .product-details .product-title {
+      font-size: 75px;
+      font-weight: 900; }
+    .big-container .product .product-details .product-price {
       font-size: 75px;
       font-weight: 900; }
     .big-container .product .product-details .product-description {
