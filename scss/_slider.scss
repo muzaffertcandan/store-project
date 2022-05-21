@@ -14,15 +14,15 @@
         justify-content: center;
         position: relative;
         &:nth-child(1) {
-          .slider-price{
+          .slider-price {
             color: #369e62;
           }
-          .slider-bg{
+          .slider-bg {
             background-color: #369e62;
           }
         }
         &:nth-child(2) {
-          .slider-price{
+          .slider-price {
             color: rebeccapurple;
           }
           .slider-bg {
@@ -30,7 +30,7 @@
           }
         }
         &:nth-child(3) {
-          .slider-price{
+          .slider-price {
             color: teal;
           }
           .slider-bg {
@@ -38,7 +38,7 @@
           }
         }
         &:nth-child(4) {
-          .slider-price{
+          .slider-price {
             color: cornflowerblue;
           }
           .slider-bg {
@@ -46,11 +46,11 @@
           }
         }
         &:nth-child(5) {
-          .slider-price{
-            color: rgb(124,115,80);
+          .slider-price {
+            color: rgb(124, 115, 80);
           }
           .slider-bg {
-            background-color: rgb(124,115,80);
+            background-color: rgb(124, 115, 80);
           }
         }
         .slider-title {
@@ -97,6 +97,38 @@
           &:hover {
             background-color: white;
             color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .big-container {
+    .slider {
+      clip-path: none;
+      .slider-wrapper {
+        .slider-item {
+          .slider-img {
+            width: 90%;
+          }
+          .slider-bg {
+            width: 100%;
+            height: 100%;
+          }
+          .slider-title {
+            display: none;
+          }
+          .slider-price {
+            top: unset;
+            bottom: -50px;
+            left: 0;
+            background-color: lightgray;
+          }
+          .buy-button {
+            right: 0;
+            top: 0;
           }
         }
       }

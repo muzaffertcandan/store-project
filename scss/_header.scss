@@ -8,6 +8,7 @@
       align-items: center;
       justify-content: space-between;
       .nav-item {
+
         .limited-offer {
           font-size: 20px;
           border-bottom: 2px solid green;
@@ -33,15 +34,38 @@
         }
       }
     }
-    .nav-bottom{
+    .nav-bottom {
       display: flex;
       align-items: center;
       justify-content: center;
-      .menu-item{
+      .menu-item {
         margin-right: 50px;
         cursor: pointer;
         color: white;
         font-weight: 400;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .big-container {
+    .nav {
+      padding: 20px;
+      .nav-top {
+        .nav-item {
+          .search {
+            display: none;
+          }
+        }
+      }
+      .nav-bottom {
+        flex-wrap: wrap;
+        .menu-item {
+          margin: 20px;
+          font-weight: 700;
+          font-size: 20px;
+        }
       }
     }
   }
