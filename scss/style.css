@@ -159,13 +159,56 @@ body {
     right: 0;
     margin: auto;
     padding: 10px 50px;
-    display: flex;
+    display: none;
     flex-direction: column;
     -webkit-box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.87);
     box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.87); }
     .big-container .product .payment .pay-title {
       font-size: 20px;
       color: #b3b3b3; }
+    .big-container .product .payment .pay-label {
+      font-size: 14px;
+      font-weight: 300; }
+    .big-container .product .payment .pay-input {
+      margin: 10px;
+      padding: 10px 0px;
+      border: none;
+      border-bottom: 1px solid grey; }
+      .big-container .product .payment .pay-input::placeholder {
+        color: #a5a5a5; }
+    .big-container .product .payment .card-icons {
+      display: flex; }
+      .big-container .product .payment .card-icons .card-icon {
+        width: 40px;
+        margin-right: 10px; }
+    .big-container .product .payment .card-info {
+      display: flex;
+      justify-content: space-between; }
+      .big-container .product .payment .card-info .small {
+        width: 30%; }
+    .big-container .product .payment .pay-button {
+      position: absolute;
+      height: 40px;
+      bottom: -40px;
+      width: 100%;
+      left: 0;
+      -webkit-box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.87);
+      background-color: #369e62;
+      color: white;
+      border: none;
+      cursor: pointer; }
+    .big-container .product .payment .close {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      background-color: gray;
+      color: white;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer; }
   .big-container .product .product-details {
     position: absolute;
     top: 10%;
@@ -206,7 +249,6 @@ body {
       float: right;
       padding: 10px 20px;
       border-color: black;
-      color: white;
       font-weight: 600;
       cursor: pointer; }
       .big-container .product .product-details .product-button:hover {
