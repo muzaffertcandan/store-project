@@ -1,68 +1,88 @@
-.big-container{
-    .product{
-        height: 100vh;
-        background-color: whitesmoke;
-        position: relative;
-        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-        .product-img{
-            width: 50%;
-        }
-        .product-details{
-            position: absolute;
-            top: 10%;
-            right: 0;
-            width: 40%;
-            padding: 50px;
-            .product-title{
-                font-size: 75px;
-                font-weight: 900;
-            }
-            .product-price{
-                font-size: 75px;
-                font-weight: 900;
-            }
-            .product-description{
-                font-style: 24px;
-                color: grey;
-            }
-            .colors{
-                margin-bottom: 20px;
-                display: flex;
-                .color{
-                    width: 32px;
-                    height: 32px;
-                    border-radius: 5px;
-                    background-color: black;
-                    margin-right: 10px;
-                    cursor: pointer;
-                    &:nth-child(2){
-                        background-color: darkblue;
-                    }
-                }
-            }
-            .sizes{
-                display: flex;
-                margin-bottom: 20px;
-                .size{
-                    padding: 5px 20px;
-                    border: 1px solid black;
-                    margin-right: 10px;
-                    cursor: pointer;
-                    font-size: 20px;
-                }
-            }
-            .product-button{
-                float:right;
-                padding: 10px 20px;
-                border-color: black;
-                color:white;
-                font-weight: 600;
-                cursor: pointer;
-                &:hover{
-                    background-color: white;
-                    color: black;
-                }
-            }
-        }
+.big-container {
+  .product {
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    .product-img {
+      width: 50%;
     }
+    .payment {
+      width: 500px;
+      height: 500px;
+      background-color: white;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      padding: 10px 50px;
+      display: flex;
+      flex-direction: column;
+      -webkit-box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.87);
+      box-shadow: 0px 0px 27px -3px rgba(0, 0, 0, 0.87);
+      .pay-title{
+          font-size: 20px;
+          color: rgb(179, 179, 179);
+      }
+    }
+    .product-details {
+      position: absolute;
+      top: 10%;
+      right: 0;
+      width: 40%;
+      padding: 50px;
+      .product-title {
+        font-size: 75px;
+        font-weight: 900;
+      }
+      .product-price {
+        font-size: 75px;
+        font-weight: 900;
+      }
+      .product-description {
+        font-style: 24px;
+        color: grey;
+      }
+      .colors {
+        margin-bottom: 20px;
+        display: flex;
+        .color {
+          width: 32px;
+          height: 32px;
+          border-radius: 5px;
+          background-color: black;
+          margin-right: 10px;
+          cursor: pointer;
+          &:nth-child(2) {
+            background-color: darkblue;
+          }
+        }
+      }
+      .sizes {
+        display: flex;
+        margin-bottom: 20px;
+        .size {
+          padding: 5px 20px;
+          border: 1px solid black;
+          margin-right: 10px;
+          cursor: pointer;
+          font-size: 20px;
+        }
+      }
+      .product-button {
+        float: right;
+        padding: 10px 20px;
+        border-color: black;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
 }
